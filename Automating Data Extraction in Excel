@@ -1,3 +1,7 @@
+'#Simplest Solution is to write the following code to eat box
+=IFERROR(INDIRECT($A2&"!L3"),"")
+
+
 '#This is a VBA code used to extract data from monthly fundraising report excel into a dataset in excel.
 
 Private Sub Plugdata()
