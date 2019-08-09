@@ -7,7 +7,6 @@
 Private Sub Plugdata()
 '#Define Variables
 Dim Reportname As String, Country As String, Year As Integer, Month As String, Regular_EMP As Integer
-Reportname = "2017Jan"
 Reportname = InputBox("Type the Report Name eg. 2017Jan", "Type Report Name", "Type Report Name Here")
 Worksheets(Reportname).Select
 
