@@ -3,7 +3,7 @@
 '# for each column change 'L3' to the location of the data
 =IFERROR(INDIRECT($A2&"!L3"),"")
 
-
+'#Alternative Method
 '#This is a VBA code used to extract data from monthly fundraising report excel into a dataset in excel.
 
 Private Sub Plugdata()
