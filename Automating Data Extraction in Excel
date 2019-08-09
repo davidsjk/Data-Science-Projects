@@ -1,0 +1,28 @@
+#This is a VBA code used to extract data from monthly fundraising report excel into a dataset in excel.
+
+Private Sub Plugdata()
+
+Dim Country As String, Year As Integer, Month As String, Regular_EMP As Integer
+Worksheets("2017JAN").Select
+Country = Range("L3")
+Year = Range("H1")
+Month = Range("G1")
+Regular_EMP = Range("D10")
+
+Worksheets("Data").Select
+Worksheets("Data").Range("A1").Select
+If Worksheets("Data").Range("A1").Offset(1, 0) <> "" Then
+Worksheets("Data").Range("A1").End(xlDown).Select
+End If
+
+ActiveCell.Offset(1, 0).Select
+ActiveCell.Value = Country
+ActiveCell.Offset(0, 1).Select
+ActiveCell.Value = Year
+ActiveCell.Offset(0, 1).Select
+ActiveCell.Value = Month
+ActiveCell.Offset(0, 1).Select
+ActiveCell.Value = Regular_EMP
+
+
+End Sub
