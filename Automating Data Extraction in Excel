@@ -1,4 +1,6 @@
-'#Simplest Solution is to write the following code to eat box
+'#Simplest Solution is to write a variation of the following code to eat box of the data frame
+'# in Column A of the data frame, input the name of the report to extract from
+'# for each column change 'L3' to the location of the data
 =IFERROR(INDIRECT($A2&"!L3"),"")
 
 
