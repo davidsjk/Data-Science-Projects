@@ -7,7 +7,8 @@
 #This uses the label found on the cell of the data to locate the data
 =INDEX( 2019JUN!D:D, MATCH("Expenditure",2019JUN!D:D)+1)
 
-
+For flexibility:
+=INDEX( INDIRECT($A2&"!D:D"), MATCH("Expenditure",INDIRECT($A2&"!D:D"))+1)
 
 
 
